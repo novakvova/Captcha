@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+@using (Html.BeginForm("Index", "Image", FormMethod.Post, new { @enctype = "multipart/form-data" }))
+{
+
+    <input type="file" multiple="true" name="Image" id="Image" class="form-control" />
+    <br/>
+    <input type="submit" value="Зберегти зображення" class="btn btn-default" />
+}
+
